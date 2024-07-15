@@ -1,1 +1,2 @@
-# idle-game
+# Idle Game
+An incremental idle game.
