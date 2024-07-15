@@ -5,7 +5,7 @@
   "extensions": [
     "ritwickdey.LiveServer"
   ],
-  "postCreateCommand": "npm install -g http-server",
+  "postCreateCommand": "npm install",
   "runArgs": ["--init"],
   "postStartCommand": "http-server src -p 8080"
 }
