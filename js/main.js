@@ -29,7 +29,7 @@ document.getElementById('upgradeButton').addEventListener('click', () => {
       document.getElementById('numberDisplay').innerText = number;
       increment += 1;
   }
-  document.getElementById('incrementAmountDisplay').innerText = incrementAmount
+  document.getElementById('incrementAmountDisplay').innerText = increment
 });
 
 // Optional: Stop interval when user leaves or completes the game
