@@ -1,6 +1,6 @@
 let number = 0;
 let increment = 1
-let intervalId = setInterval(incrementNumber, 1000); // 1 seconds interval
+let intervalId = setInterval(incrementNumber, 5000); // 5 seconds interval
 
 function incrementNumber() {
   number+=increment;
