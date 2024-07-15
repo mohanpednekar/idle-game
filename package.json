@@ -4,8 +4,9 @@
   "description": "An incremental idle game.",
   "main": "src/js/main.js",
   "scripts": {
-    "start": "http-server src -p 8080"
-  },
+    "start": "http-server src -p 8080",
+    "deploy": "gh-pages -d src"
+  }
   "devDependencies": {
     "http-server": "^0.12.3"
   }
