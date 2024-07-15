@@ -4,9 +4,6 @@ let cycle = 10 // seconds
 let intervalId = setInterval(incrementNumber, cycle * 1000);
 
 function incrementNumber() {
-  number+=increment;
-  document.getElementById('numberDisplay').innerText = number;
-  
   let progressWidth = 0;
   let incrementAmount = 1; // Adjust increment amount as needed for smoothness
 
@@ -21,6 +18,8 @@ function incrementNumber() {
   
   setTimeout(() => {
     document.getElementById('progress').style.width = '0%';
+    number+=increment;
+    document.getElementById('numberDisplay').innerText = number;
   }, cycle * 1000);
 }
 
@@ -32,3 +31,5 @@ document.getElementById('upgradeButton').addEventListener('click', () => {
 window.addEventListener('beforeunload', () => {
    clearInterval(intervalId);
 });
+
+incrementNumber()
