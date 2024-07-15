@@ -25,6 +25,7 @@ function incrementNumber() {
 
 document.getElementById('upgradeButton').addEventListener('click', () => {
   increment += 1; // Increase the increment by 1 on upgrade
+  document.getElementById('incrementAmountDisplay').innerText = incrementAmount
 });
 
 // Optional: Stop interval when user leaves or completes the game
