@@ -1,14 +1,14 @@
 let number = 0;
 let increment = 1
 let cycle = 5 // seconds
-let intervalId = setInterval(incrementNumber, cycle*1000);
+let intervalId = setInterval(incrementNumber, cycle * 1000);
 
 function incrementNumber() {
   number+=increment;
   document.getElementById('numberDisplay').innerText = number;
   
   let progressWidth = 0;
-  let incrementAmount = 1; // Adjust increment amount as needed for smoothness
+  let incrementAmount = 10; // Adjust increment amount as needed for smoothness
 
   let interval = setInterval(() => {
     progressWidth += incrementAmount;
@@ -17,7 +17,7 @@ function incrementNumber() {
     if (progressWidth >= 100) {
       clearInterval(interval); // Stop the interval once progress reaches 100%
     }
-  }, cycle * 10);
+  }, cycle * incrementAmount * 10);
 }
 
 document.getElementById('upgradeButton').addEventListener('click', () => {
