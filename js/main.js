@@ -24,7 +24,11 @@ function incrementNumber() {
 }
 
 document.getElementById('upgradeButton').addEventListener('click', () => {
-  increment += 1; // Increase the increment by 1 on upgrade
+  if(number >= 10){
+      number -= 10;
+      document.getElementById('numberDisplay').innerText = number;
+      increment += 1;
+  }
   document.getElementById('incrementAmountDisplay').innerText = incrementAmount
 });
 
