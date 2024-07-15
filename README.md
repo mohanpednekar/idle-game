@@ -1,2 +1,2 @@
 # Idle Game
-An incremental idle game.
+An incremental idle game developed on iPad.
