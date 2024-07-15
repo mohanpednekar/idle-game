@@ -15,7 +15,7 @@ jobs:
 
     - name: Set up Git
       run: |
-          git config --global user.name 'mohanpedenkar'
+          git config --global user.name 'mohanpednekar'
           git config --global user.email 'pednekar.mohan@gmail.com'
 
 
