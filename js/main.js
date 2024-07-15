@@ -1,8 +1,9 @@
 let number = 0;
-let intervalId = setInterval(incrementNumber, 10000); // 10 seconds interval
+let increment = 1
+let intervalId = setInterval(incrementNumber, 1000); // 1 seconds interval
 
 function incrementNumber() {
-  number++;
+  number+=increment;
   document.getElementById('numberDisplay').innerText = number;
   document.getElementById('progress').style.width = '0%'; // Reset progress bar
   setTimeout(() => {
@@ -11,8 +12,7 @@ function incrementNumber() {
 }
 
 document.getElementById('upgradeButton').addEventListener('click', () => {
-  number += 5; // Increment number by 5 on upgrade
-  document.getElementById('numberDisplay').innerText = number;
+  increment += 1; // Increase the increment by 1 on upgrade
 });
 
 // Optional: Stop interval when user leaves or completes the game
