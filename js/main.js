@@ -8,7 +8,7 @@ function incrementNumber() {
   document.getElementById('numberDisplay').innerText = number;
   
   let progressWidth = 0;
-  let incrementAmount = 10; // Adjust increment amount as needed for smoothness
+  let incrementAmount = 1; // Adjust increment amount as needed for smoothness
 
   let interval = setInterval(() => {
     progressWidth += incrementAmount;
