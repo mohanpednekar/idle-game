@@ -1,0 +1,11 @@
+{
+  "name": "Idle Game Dev Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-14",
+  "forwardPorts": [8080],
+  "extensions": [
+    "ritwickdey.LiveServer"
+  ],
+  "postCreateCommand": "npm install -g http-server",
+  "runArgs": ["--init"],
+  "postStartCommand": "http-server src -p 8080"
+}
